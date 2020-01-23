@@ -1,0 +1,361 @@
+@import 'variables','mixins';
+
+/* temporäres CSS, wird ab der Nutzung von Bootstrap 4 entfernt */
+
+.row {
+  display: flex;
+  width: 100%;
+  .col {
+    flex-grow: 1;
+    &:not(:last-of-type){
+      margin-right: 10px;
+    }
+  }
+}
+
+.fce-4-col .col {
+    width: 25%;
+}
+
+div[class*="-col"] {
+    //max-width: 1180px;
+    position: relative;
+    margin: auto;
+}
+
+/* Elements */
+
+/* Dashboard-Box */
+
+.fce-dashboard-box {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 117px;
+  background: $dark-blue;
+  overflow: hidden;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  h3, p {
+    margin: 0;
+    color: $white;
+    text-align: left;
+  }
+  .text {
+    p {
+      font-size: 15px;
+      line-height: 1.1;
+    }
+  }
+  .button {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+  }
+  .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      figure {
+          margin: 0;
+          img {
+              width: 100%;
+              height: auto;
+          }
+      }
+  }
+  .content {
+    position: relative;
+    z-index: 9;
+  }
+  .inner, .content {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.button {
+  display: inline-block;
+  transition: background-color .5s ease-in-out;
+  padding: 0 5px;
+  border-radius: 5px;
+  p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  &.magenta {
+    background-color: $magenta;
+    &:hover {
+      background-color: $dark-blue;
+    }
+  }
+  &.green {
+    background-color: $green;
+    &:hover {
+      background-color: $dark-blue;
+    }
+  }
+}
+
+/* Teaser-Box animated */
+
+.fce-teaser-box-animated {
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    padding: 20px 0;
+    transition: padding .25s ease-in;
+    &:hover {
+      padding-top: 10px;
+      padding-bottom: 30px;
+    }
+
+    .background, .background-hover {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+  .background-image {
+    z-index: 1;
+    background-color: $dark-blue;
+    figure {
+      margin: 0;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .background-hover {
+    z-index: 9;
+    background-color: $dark-blue;
+    opacity: 0.8;
+    transition: opacity .5s linear;
+  }
+  &:hover .background-hover {
+      opacity: 0.4;
+    }
+    .content {
+        position: relative;
+        z-index: 99;
+        height: 100%;
+        width: 100%;
+        .icon {
+            .ce-gallery .ce-row {
+                margin: 0;
+                display: block;
+                .ce-column {
+                    margin: 0;
+                }
+            }
+            figure {
+                margin: 0;
+                text-align: center;
+            }
+        }
+        h3, p {
+            text-align: center;
+            color: $white;
+        }
+    }
+}
+
+/* Teaser-Box basic */
+
+.fce-teaser-box {
+  background-color: $light-grey;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  overflow: hidden;
+  .titleImage {
+    height: 100px;
+    overflow: hidden;
+    background-color: $dark-blue;
+    figure {
+      margin: 0;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .content {
+    padding: 20px;
+      p {
+          margin: 0;
+      }
+  }
+}
+
+/* Zoom-Images */
+
+.fce-zoom-images {
+    position: relative;
+    .inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        background-color: $light-grey;
+        figure {
+            margin: 0;
+            img {
+                height: 120px;
+                width: auto;
+                transition: transform .25s ease-in-out;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+/* Typo3 CE-Gallery */
+
+.ce-gallery {
+    .ce-row {
+        display: flex;
+        flex-direction: row;
+        &:not(:last-of-type){
+            margin-bottom: 10px;
+        }
+        .ce-column:not(:last-of-type) {
+            margin-right: 10px;
+        }
+    }
+}
+
+/* Check List */
+
+.fce-check-list {
+    text-align: center;
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style: none;
+        background: url('../Assets/fxflat-bigcheck.png') center center no-repeat;
+        background-size: contain;
+        margin: 0;
+        padding: 20px 0;
+        li {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+/* Parallax Container */
+
+.fce-parallax {
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+    overflow: hidden;
+    .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        div {display: none;}
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+    .inner {
+        position: relative;
+        z-index: 9;
+    }
+}
+
+/* Content Teaser */
+
+.fce-content-teaser {
+    width: 100%;
+    height: 320px;
+    margin-bottom: 10px;
+    background-color: $white;
+    padding: 20px;
+    position: relative;
+    @include borderRadius(6px,6px,6px,6px);
+    @include box-shadow(0,1px,20px,0,transparentize($black, 0.8));
+    box-sizing: border-box;
+    .icon {
+        margin-right: 20px;
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            width: 90px;
+            height: auto;
+        }
+    }
+    .content {
+        line-height: 30px;
+        h3 {
+            margin-top: 0;
+            padding-top: 20px;
+        }
+        li {
+            list-style-type: disc;
+        }
+        p:last-of-type a {
+            @include button($light-blue, $dark-blue, $white, 16px);
+            text-decoration: none;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+        }
+    }
+}
+
+/* Slider */
+
+.fce-slider {
+    background-color: $light-blue;
+    border-top: 3px solid $dark-blue;
+    border-bottom: 3px solid $dark-blue;
+    //@ToDO: entfernen wenn der StdWrap rauskonfiguriert wurde
+    .module {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .ce-gallery, .ce-textpic, .carousel-item {
+        width: 100%;
+        * {
+            width: 100%;
+        }
+        figure.image {
+            margin: 0;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        position: relative;
+    }
+    .ce-bodytext {
+        position: absolute;
+        top: 100px;
+        left: 30px;
+    }
+    header {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+}

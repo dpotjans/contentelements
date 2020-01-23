@@ -1,0 +1,25 @@
+<T3DataStructure>
+    <sheets>
+        <seite1>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Ausrichtung</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <addClass>
+                        <TCEforms>
+                            <label>Zusätliche Klasse im Wrapper</label>
+                            <config>
+                                <type>input</type>
+                                <size>255</size>
+                                <max>255</max>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </addClass>
+                </el>
+            </ROOT>
+        </seite1>
+    </sheets>
+</T3DataStructure>

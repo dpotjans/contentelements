@@ -1,0 +1,53 @@
+<T3DataStructure>
+    <sheets>
+        <seite1>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Ausrichtung</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <height>
+                        <TCEforms>
+                            <label>Höhe des Parallax-Containers in Pixeln (Wirkt sich auf die Skalierung des Hintergrundbildes aus - ausreichende Auflösung wählen!)</label>
+                            <config>
+                                <type>input</type>
+                                <size>10</size>
+                                <eval>trim,int</eval>
+                                <range>
+                                    <lower>200</lower>
+                                    <upper>800</upper>
+                                </range>
+                                <default>400</default>
+                                <slider>
+                                    <step>50</step>
+                                    <width>200</width>
+                                </slider>
+                            </config>
+                        </TCEforms>
+                    </height>
+                    <disableOnMobileDevices>
+                        <TCEforms>
+                            <label>Parallex-Effekt auf mobilen Geräten deaktivieren? (1200 Pixel Displaybreite und kleiner)</label>
+                            <config>
+                                <type>check</type>
+                                <renderType>checkboxToggle</renderType>
+                            </config>
+                        </TCEforms>
+                    </disableOnMobileDevices>
+                    <addClass>
+                        <TCEforms>
+                            <label>Zusätliche Klasse im Wrapper</label>
+                            <config>
+                                <type>input</type>
+                                <size>255</size>
+                                <max>255</max>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </addClass>
+                </el>
+            </ROOT>
+        </seite1>
+    </sheets>
+</T3DataStructure>

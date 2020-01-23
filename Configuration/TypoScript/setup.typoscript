@@ -1,0 +1,11 @@
+page {
+    includeCSS {
+        elements = EXT:fx_contentelements/Resources/Public/Css/elements.css
+    }
+    includeJSFooter {
+        elements = EXT:fx_contentelements/Resources/Public/Js/elements.js
+        init = EXT:fx_contentelements/Resources/Public/Js/init.js
+    }
+}
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fx_contentelements/Configuration/TypoScript/gridelements-fce.typoscript">

@@ -1,0 +1,101 @@
+
+tt_content.gridelements_pi1.20.10.setup.51 < lib.gridelements.defaultGridSetup
+tt_content.gridelements_pi1.20.10.setup.51 {
+	 cObject = FLUIDTEMPLATE
+	cObject.file = EXT:fx_contentelements/Resources/Private/Templates/Fce-1-col.html
+}
+tt_content.gridelements_pi1.20.10.setup.52 < lib.gridelements.defaultGridSetup
+tt_content.gridelements_pi1.20.10.setup.52 {
+	 cObject = FLUIDTEMPLATE
+	cObject.file = EXT:fx_contentelements/Resources/Private/Templates/Fce-2-col.html
+}
+tt_content.gridelements_pi1.20.10.setup.53 < lib.gridelements.defaultGridSetup
+tt_content.gridelements_pi1.20.10.setup.53 {
+	 cObject = FLUIDTEMPLATE
+	cObject.file = EXT:fx_contentelements/Resources/Private/Templates/Fce-3-col.html
+}
+tt_content.gridelements_pi1.20.10.setup.54 < lib.gridelements.defaultGridSetup
+tt_content.gridelements_pi1.20.10.setup.54 {
+	 cObject = FLUIDTEMPLATE
+	cObject.file = EXT:fx_contentelements/Resources/Private/Templates/Fce-4-col.html
+}
+tt_content.gridelements_pi1.20.10.setup.55 < lib.gridelements.defaultGridSetup
+tt_content.gridelements_pi1.20.10.setup.55 {
+	 cObject = FLUIDTEMPLATE
+	cObject.file = EXT:fx_contentelements/Resources/Private/Templates/Fce-5-col.html
+}
+tt_content.gridelements_pi1.20.10.setup.56 < lib.gridelements.defaultGridSetup
+tt_content.gridelements_pi1.20.10.setup.56 {
+	 cObject = FLUIDTEMPLATE
+	cObject.file = EXT:fx_contentelements/Resources/Private/Templates/Fce-dashboard-box.html
+}
+tt_content.gridelements_pi1.20.10.setup.57 < lib.gridelements.defaultGridSetup
+tt_content.gridelements_pi1.20.10.setup.57 {
+	 cObject = FLUIDTEMPLATE
+	cObject.file = EXT:fx_contentelements/Resources/Private/Templates/Fce-teaser-box-animated.html
+}
+tt_content.gridelements_pi1.20.10.setup.58 < lib.gridelements.defaultGridSetup
+tt_content.gridelements_pi1.20.10.setup.58 {
+	 cObject = FLUIDTEMPLATE
+	cObject.file = EXT:fx_contentelements/Resources/Private/Templates/Fce-teaser-box.html
+}
+tt_content.gridelements_pi1.20.10.setup.59 < lib.gridelements.defaultGridSetup
+tt_content.gridelements_pi1.20.10.setup.59 {
+	 cObject = FLUIDTEMPLATE
+	cObject.file = EXT:fx_contentelements/Resources/Private/Templates/Fce-zoom-images.html
+}
+tt_content.gridelements_pi1.20.10.setup.60 < lib.gridelements.defaultGridSetup
+tt_content.gridelements_pi1.20.10.setup.60 {
+	 cObject = FLUIDTEMPLATE
+	cObject.file = EXT:fx_contentelements/Resources/Private/Templates/Fce-check-list.html
+}
+tt_content.gridelements_pi1.20.10.setup.62 < lib.gridelements.defaultGridSetup
+tt_content.gridelements_pi1.20.10.setup.62 {
+	 cObject = FLUIDTEMPLATE
+	cObject.file = EXT:fx_contentelements/Resources/Private/Templates/Fce-parallax.html
+}
+tt_content.gridelements_pi1.20.10.setup.63 < lib.gridelements.defaultGridSetup
+tt_content.gridelements_pi1.20.10.setup.63 {
+	 cObject = FLUIDTEMPLATE
+	cObject.file = EXT:fx_contentelements/Resources/Private/Templates/Fce-parallax.html
+}
+tt_content.gridelements_pi1.20.10.setup.64 < lib.gridelements.defaultGridSetup
+tt_content.gridelements_pi1.20.10.setup.64 {
+	 cObject = FLUIDTEMPLATE
+	cObject.file = EXT:fx_contentelements/Resources/Private/Templates/Fce-content-teaser.html
+}
+tt_content.gridelements_pi1.20.10.setup.65 < lib.gridelements.defaultGridSetup
+tt_content.gridelements_pi1.20.10.setup.65 {
+	 cObject = FLUIDTEMPLATE
+	cObject.file = EXT:fx_contentelements/Resources/Private/Templates/Fce-content-teaser.html
+}
+tt_content.gridelements_pi1.20.10.setup.66 < lib.gridelements.defaultGridSetup
+tt_content.gridelements_pi1.20.10.setup.66 {
+	 cObject = FLUIDTEMPLATE
+	cObject.file = EXT:fx_contentelements/Resources/Private/Templates/Fce-content-teaser.html
+}
+tt_content.gridelements_pi1.20.10.setup.67 < lib.gridelements.defaultGridSetup
+tt_content.gridelements_pi1.20.10.setup.67 {
+	 cObject = FLUIDTEMPLATE
+	cObject.file = EXT:fx_contentelements/Resources/Private/Templates/Fce-content-teaser.html
+}
+tt_content.gridelements_pi1.20.10.setup.68 < lib.gridelements.defaultGridSetup
+tt_content.gridelements_pi1.20.10.setup.68 {
+	 cObject = FLUIDTEMPLATE
+	cObject.file = EXT:fx_contentelements/Resources/Private/Templates/Fce-content-teaser.html
+}
+tt_content.gridelements_pi1.20.10.setup.69 < lib.gridelements.defaultGridSetup
+tt_content.gridelements_pi1.20.10.setup.69 {
+	 cObject = FLUIDTEMPLATE
+	cObject.file = EXT:fx_contentelements/Resources/Private/Templates/Fce-slider.html
+}
+tt_content.gridelements_pi1.20.10.setup.70 < lib.gridelements.defaultGridSetup
+tt_content.gridelements_pi1.20.10.setup.70 {
+	 cObject = FLUIDTEMPLATE
+	cObject.file = EXT:fx_contentelements/Resources/Private/Templates/Fce-accordeon.html
+}
+tt_content.gridelements_pi1.20.10.setup.71 < lib.gridelements.defaultGridSetup
+tt_content.gridelements_pi1.20.10.setup.71 {
+	 cObject = FLUIDTEMPLATE
+	cObject.file = EXT:fx_contentelements/Resources/Private/Templates/Fce-tab-menu.html
+}

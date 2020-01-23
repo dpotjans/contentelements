@@ -1,0 +1,24 @@
+<f:spaceless>
+    <div id="c{data.uid}"
+         class="fce-tab-menu tab-group frame frame-{data.frame_class} {data.flexform_addClass} frame-type-{data.CType} frame-layout-{data.layout} frame-width-{data.flexform_width} frame-space-before-{data.space_before_class} frame-space-after-{data.space_after_class}">
+        <ul class="nav nav-tabs" id="tab-{data.uid}" role="tablist">
+            <f:for each="{data.tx_gridelements_view_children}" as="item" iteration="iterator">
+                <li class="nav-item">
+                    <a class="nav-link {f:if(condition: iterator.isFirst, then: 'active', else: '')}"
+                       id="tabcontentPane-{data.uid}-{iterator.index}-tab" data-toggle="tab"
+                       href="#tabcontentPane-{data.uid}-{iterator.index}" role="tab"
+                       aria-controls="tabcontentPane-{data.uid}-{iterator.index}">{item.header}</a>
+                </li>
+            </f:for>
+        </ul>
+        <div class="tab-content" id="tabContent-{data.uid}">
+            <f:for each="{data.tx_gridelements_view_children}" as="item" iteration="iterator">
+                <div id="tabcontentPane-{data.uid}-{iterator.index}" role="tabpanel"
+                     aria-labelledby="tabcontentPane-{data.uid}-{iterator.index}-tab"
+                     class="tab-pane fade {f:if(condition: iterator.isFirst, then: 'show active', else: '')}">
+                    {data.tx_gridelements_view_child_{item.uid}->f:format.raw()}
+                </div>
+            </f:for>
+        </div>
+    </div>
+</f:spaceless>

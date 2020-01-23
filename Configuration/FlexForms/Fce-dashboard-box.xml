@@ -1,0 +1,38 @@
+<T3DataStructure>
+    <sheets>
+        <seite1>
+            <ROOT>
+                <el>
+                    <link>
+                        <TCEforms>
+                            <label>Verlinkung der Box zu einer internen/externen Seite, oder einem Dokument</label>
+                            <exclude>0</exclude>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputLink</renderType>
+                                <fieldControl>
+                                    <linkPopup>
+                                        <options>
+                                            <blindLinkOptions>folder,mail,spec</blindLinkOptions>
+                                        </options>
+                                    </linkPopup>
+                                </fieldControl>
+                            </config>
+                        </TCEforms>
+                    </link>
+                    <addClass>
+                        <TCEforms>
+                            <label>Zusätliche Klasse im Wrapper</label>
+                            <config>
+                                <type>input</type>
+                                <size>255</size>
+                                <max>255</max>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </addClass>
+                </el>
+            </ROOT>
+        </seite1>
+    </sheets>
+</T3DataStructure>

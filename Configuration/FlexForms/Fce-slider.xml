@@ -1,0 +1,112 @@
+<T3DataStructure>
+    <sheets>
+        <seite0>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Zusätzliche Attribute</sheetTitle>
+                    <sheetDescription>
+                        <![CDATA[Zusätzliche Attribute]]>
+                    </sheetDescription>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <addClass>
+                        <TCEforms>
+                            <label>Zusätliche Klasse im Wrapper</label>
+                            <config>
+                                <type>input</type>
+                                <size>255</size>
+                                <max>255</max>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </addClass>
+                </el>
+            </ROOT>
+        </seite0>
+        <seite1>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Slider Konfiguration</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <animation>
+                        <TCEforms>
+                            <label>Animations-Typ</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">Slide</numIndex>
+                                        <numIndex index="1">slide</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">Fade</numIndex>
+                                        <numIndex index="1">fade</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </animation>
+                    <controls>
+                        <TCEforms>
+                            <label>Kontroll-Elemente anzeigen</label>
+                            <config>
+                                <type>check</type>
+                                <renderType>checkboxToggle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0"></numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </controls>
+                    <interval>
+                        <TCEforms>
+                            <label>Slider Interval - Zeit in Millisekunden (1000ms = 1s) zwischen den Slides</label>
+                            <config>
+                                <type>input</type>
+                                <eval>trim</eval>
+                                <default>5000</default>
+                            </config>
+                        </TCEforms>
+                    </interval>
+                    <pause>
+                        <TCEforms>
+                            <label>Slider Pause - Pausiert den Slider bei Interaktion mit der Maus oder Touch auf mobilen Geräten</label>
+                            <config>
+                                <type>check</type>
+                                <renderType>checkboxToggle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0"></numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </pause>
+                    <ride>
+                        <TCEforms>
+                            <label>Slider Autoplay - Startet die Slideanimation nach Ablauf des eingestellten Intervals automatisch
+                            </label>
+                            <config>
+                                <type>check</type>
+                                <renderType>checkboxToggle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0"></numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </ride>
+                </el>
+            </ROOT>
+        </seite1>
+    </sheets>
+</T3DataStructure>

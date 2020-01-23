@@ -1,0 +1,56 @@
+@mixin box-shadow($h-offset, $v-offset, $blur: 0, $spread: 0, $color: 0) {
+    -moz-box-shadow: $h-offset $v-offset $blur $spread $color;
+    -webkit-box-shadow: $h-offset $v-offset $blur $spread $color;
+    box-shadow: $h-offset $v-offset $blur $spread $color;
+}
+
+@mixin borderRadius($lt: 0, $rt: 0, $lb: 0, $rb :0){
+    @if $lt == $rt and $lt == $lb and $lt == $rb {
+        -moz-border-radius: $lt;
+        -webkit-border-radius: $lt;
+        border-radius: $lt;
+    }
+    @else {
+        @if $lt > 0 {
+            -moz-border-top-left-radius: $lt;
+            -webkit-border-top-left-radius: $lt;
+            border-top-left-radius: $lt;
+        }
+        @if $rt > 0 {
+            -moz-border-top-right-radius: $rt;
+            -webkit-border-top-right-radius: $rt;
+            border-top-right-radius: $rt;
+        }
+        @if $lb > 0 {
+            -moz-border-bottom-left-radius: $lb;
+            -webkit-border-bottom-left-radius: $lb;
+            border-bottom-left-radius: $lb;
+        }
+        @if $rb > 0 {
+            -moz-border-bottom-right-radius: $rb;
+            -webkit-border-bottom-right-radius: $rb;
+            border-bottom-right-radius: $rb;
+        }
+    }
+}
+
+@mixin button($color, $hover-color, $font-color, $font-size: 1rem){
+    display: inline-block;
+    transition: background-color .5s ease-in-out;
+    padding: 10px 25px;
+    @include borderRadius(5px,5px,5px,5px);
+    font-size: $font-size;
+    line-height: calc(#{$font-size} - 4px);
+    color: $font-color;
+    background-color: $color;
+    font-weight: normal;
+    &:hover {
+        background-color: $hover-color;
+    }
+    p {
+        font-size: $font-size;
+        line-height: calc(#{$font-size} - 4px);
+        color: $font-color;
+        font-weight: normal;
+    }
+}

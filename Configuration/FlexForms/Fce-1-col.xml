@@ -1,0 +1,59 @@
+<T3DataStructure>
+	<sheets>
+		<seite1>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Ausrichtung</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<backgroundimage type="array">
+						<TCEforms type="array">
+							<label>Hintergrundbild</label>
+							<config type="array">
+								<type>inline</type>
+								<maxitems>1</maxitems>
+								<foreign_table>sys_file_reference</foreign_table>
+								<!--<foreign_field>uid_foreign</foreign_field>-->
+								<foreign_table_field>tablenames</foreign_table_field>
+								<foreign_label>uid_local</foreign_label>
+								<foreign_sortby>sorting_foreign</foreign_sortby>
+								<foreign_selector>uid_local</foreign_selector>
+								<foreign_selector_fieldTcaOverride type="array">
+									<config>
+										<appearance>
+											<elementBrowserType>file</elementBrowserType>
+											<elementBrowserAllowed>jpg,png</elementBrowserAllowed>
+										</appearance>
+									</config>
+								</foreign_selector_fieldTcaOverride>
+								<foreign_match_fields type="array">
+									<fieldname>image</fieldname>
+								</foreign_match_fields>
+								<appearance type="array">
+									<newRecordLinkAddTitle>1</newRecordLinkAddTitle>
+									<headerThumbnail>
+										<field>uid_local</field>
+										<height>64</height>
+										<width>64</width>
+									</headerThumbnail>
+								</appearance>
+							</config>
+						</TCEforms>
+					</backgroundimage>
+					<addClass>
+						<TCEforms>
+							<label>Zusätliche Klasse im Wrapper</label>
+							<config>
+								<type>input</type>
+								<size>255</size>
+								<max>255</max>
+								<eval>trim</eval>
+							</config>
+						</TCEforms>
+					</addClass>
+				</el>
+			</ROOT>
+		</seite1>
+	</sheets>
+</T3DataStructure>

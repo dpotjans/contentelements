@@ -1,0 +1,37 @@
+<f:spaceless>
+    <div id="accordion{data.uid}"
+         class="fce-accordeon accordeon-group frame frame-{data.frame_class} {data.flexform_addClass} frame-type-{data.CType} frame-layout-{data.layout} frame-space-before-{data.space_before_class} frame-space-after-{data.space_after_class}">
+        <f:for each="{data.tx_gridelements_view_children}" as="item" iteration="iterator">
+
+            <f:if condition="{data.flexform_open} && {iterator.isFirst}">
+                <f:then>
+                    <div class="card expanded">
+                </f:then>
+                <f:else>
+                    <div class="card">
+                </f:else>
+            </f:if>
+
+            <div class="card-header" id="heading-{data.uid}-{iterator.index}">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-{data.uid}-{iterator.index}"
+                        aria-expanded="false" aria-controls="collapse-{data.uid}-{iterator.index}">{item.header}
+                </button>
+            </div>
+            <f:if condition="{data.flexform_open}">
+                <f:then>
+                    <div id="collapse-{data.uid}-{iterator.index}"
+                         class="{f:if(condition: iterator.isFirst, then: 'collapse show', else: 'collapse')}"
+                         aria-labelledby="heading-{data.uid}-{iterator.index}" data-parent="#accordion{data.uid}">
+                        <div class="card-body">{data.tx_gridelements_view_child_{item.uid}->f:format.raw()}</div>
+                    </div>
+                </f:then>
+                <f:else>
+                    <div id="collapse-{data.uid}-{iterator.index}" class="collapse"
+                         aria-labelledby="heading-{data.uid}-{iterator.index}" data-parent="#accordion{data.uid}">
+                        <div class="card-body">{data.tx_gridelements_view_child_{item.uid}->f:format.raw()}</div>
+                    </div>
+                </f:else>
+            </f:if>
+    </f:for>
+    </div>
+</f:spaceless>

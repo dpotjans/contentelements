@@ -1,0 +1,6 @@
+styles.content.textmedia {
+    maxW = 1920m
+    maxWInText = 600m
+    linkWrap.width = 1400m
+    linkWrap.height = 900m
+}

@@ -1,0 +1,35 @@
+<f:spaceless>
+    <div id="c{data.uid}"
+         class="fce-slider frame frame-{data.frame_class} frame-type-{data.CType} {data.flexform_addClass} frame-layout-{data.layout} frame-width-{data.flexform_width} frame-space-before-{data.space_before_class} frame-space-after-{data.space_after_class}">
+        <div id="carouselIndicators-{data.uid}" class="carousel slide {f:if(condition:'{data.flexform_animation} == fade', then: 'carousel-fade')}"
+             data-touch="true"
+             data-ride="{f:if(condition:'{data.flexform_ride} == 1', then: 'carousel')}"
+             data-pause="{f:if(condition: '{data.flexform_pause} == 1', then: 'hover')}"
+             data-interval="{data.flexform_interval}">
+
+            <f:if condition="{data.flexform_controls}">
+                <ol class="carousel-indicators">
+                    <f:for each="{data.tx_gridelements_view_children}" as="item" iteration="iterator">
+                        <li data-target="#carouselIndicators-{data.uid}" data-slide-to="{iterator.index}"
+                            class="{f:if(condition: iterator.isFirst, then: 'active', else: '')}"></li>
+                    </f:for>
+                </ol>
+            </f:if>
+            <div class="carousel-inner">
+                <f:for each="{data.tx_gridelements_view_children}" as="item" iteration="iterator">
+                    <div class="carousel-item {f:if(condition: iterator.isFirst, then: 'active', else: '')}">
+                        {data.tx_gridelements_view_child_{item.uid}->f:format.raw()}
+                    </div>
+                </f:for>
+            </div>
+            <f:if condition="{data.flexform_controls}">
+                <a class="carousel-control-prev" href="#" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </f:if>
+        </div>
+    </div>
+</f:spaceless>

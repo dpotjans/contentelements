@@ -1,0 +1,56 @@
+<T3DataStructure>
+    <sheets>
+        <seite0>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Zusätzliche Attribute</sheetTitle>
+                    <sheetDescription>
+                        <![CDATA[Zusätzliche Attribute]]>
+                    </sheetDescription>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <addClass>
+                        <TCEforms>
+                            <label>Zusätliche Klasse im Wrapper</label>
+                            <config>
+                                <type>input</type>
+                                <size>255</size>
+                                <max>255</max>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </addClass>
+                </el>
+            </ROOT>
+        </seite0>
+        <seite1>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Verhalten</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <open>
+                        <TCEforms>
+                            <label>Erstes Element geöffnet</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">ja</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">nein</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </open>
+                </el>
+            </ROOT>
+        </seite1>
+    </sheets>
+</T3DataStructure>

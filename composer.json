@@ -1,0 +1,24 @@
+  
+{
+  "name": "dpotjans/contenteelements",
+  "description": "Provides custom contentelements",
+  "type": "typo3-cms-extension",
+  "version": "10.0.0",
+  "prefer-stable": true,
+  "minimum-stability": "dev",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "typo3/cms-core": "^10.0 || dev-master",
+    "typo3/cms-backend": "^10.0 || dev-master",
+    "typo3/cms-recordlist": "^10.0 || dev-master",
+    "typo3/cms-frontend": "^10.0 || dev-master"
+  },
+  "replace": {
+    "dpotjans/contentelements": "self.version"
+  },
+  "autoload": {
+    "psr-4": {
+      "Fx\\Contentelements\\": "Classes/"
+    }
+  }
+}
